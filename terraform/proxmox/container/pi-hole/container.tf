@@ -17,6 +17,7 @@ resource "proxmox_lxc" "pi-hole" {
     name   = "eth0"
     bridge = "vmbr0"
     ip     = "192.168.0.101/24"
+    gw     = "192.168.0.100"
   }
 
   rootfs {
