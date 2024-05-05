@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "eirayimiguk"
     workspaces {
-      name = "homelab"
+      name = "pi-hole"
     }
   }
   required_providers {

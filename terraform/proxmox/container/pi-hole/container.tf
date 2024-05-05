@@ -1,6 +1,6 @@
 resource "proxmox_lxc" "pi-hole" {
   target_node  = "minase"
-  vmid         = 100
+  vmid         = 103
   hostname     = "pi-hole"
   ostemplate   = "local:vztmpl/ubuntu-22.04-standard_22.04-1_amd64.tar.zst"
   unprivileged = true
@@ -10,7 +10,7 @@ resource "proxmox_lxc" "pi-hole" {
   swap         = 1024
   onboot       = true
   start        = true
-  tags         = "debian;management"
+  tags         = "ubuntu;service"
 
   ssh_public_keys = <<EOT
     ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO/t8WxckiAay1Ql5kyoyxlIDlXU0M17Epu5zSqDWjVo
