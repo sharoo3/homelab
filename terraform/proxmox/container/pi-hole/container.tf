@@ -10,7 +10,7 @@ resource "proxmox_lxc" "pi-hole" {
   swap            = 1024
   onboot          = true
   start           = true
-  ssh_public_keys = file("${path.module}/key.pub")
+  ssh_public_keys = file("../../../../resources/public_keys/key.pub")
   tags            = "debian;management"
 
   network {
