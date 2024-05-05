@@ -12,7 +12,7 @@ resource "proxmox_lxc" "pi-hole" {
   start        = true
   tags         = "benchmark;ubuntu"
 
-  ssh_public_keys = <<EOT
+  ssh_public_keys = <<-EOT
     ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO/t8WxckiAay1Ql5kyoyxlIDlXU0M17Epu5zSqDWjVo
   EOT
 

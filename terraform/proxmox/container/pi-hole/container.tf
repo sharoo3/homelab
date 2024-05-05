@@ -10,9 +10,9 @@ resource "proxmox_lxc" "pi-hole" {
   swap         = 1024
   onboot       = true
   start        = true
-  tags         = "ubuntu;service"
+  tags         = "service;ubuntu"
 
-  ssh_public_keys = <<EOT
+  ssh_public_keys = <<-EOT
     ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO/t8WxckiAay1Ql5kyoyxlIDlXU0M17Epu5zSqDWjVo
   EOT
 
