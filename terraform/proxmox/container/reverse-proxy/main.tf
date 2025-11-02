@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "eirayimiguk"
     workspaces {
-      name = "selfcare-web"
+      name = "reverse-proxy"
     }
   }
   required_providers {
